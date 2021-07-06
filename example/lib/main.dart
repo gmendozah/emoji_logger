@@ -55,6 +55,7 @@ class _MyAppState extends State<MyApp> {
           child: Text('Running on: $_platformVersion\n'),
         ),
         floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
           onPressed: () {
             EmojiLogger.d('Sup dude!');
             EmojiLogger.e('Sup dude! 2');
