@@ -1,3 +1,8 @@
+library flutter_logger;
+
+export 'src/logger_src.dart';
+
+/*
 
 import 'dart:async';
 
@@ -12,3 +17,4 @@ class FlutterLogs {
     return version;
   }
 }
+*/
