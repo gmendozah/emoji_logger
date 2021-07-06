@@ -1,5 +1,6 @@
 # Emoji Logger
 
+<img src="https://img.shields.io/badge/Emoji%20Logger-0.0.1-blue">
 
 Simple logger that adds an emoji to a message.
 log print with ease.
