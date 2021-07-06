@@ -1,23 +1,15 @@
-import 'package:flutter/services.dart';
+import 'dart:async';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_logs/flutter_logs.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('flutter_logs');
-
-  TestWidgetsFlutterBinding.ensureInitialized();
-
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
-
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
-
-  test('getPlatformVersion', () async {
-    expect(await FlutterLogs.platformVersion, '42');
+  test('EmojiLogger d should print and emoji and mesage', () {
+    runZoned(() {
+      EmojiLogger.d('test');
+    }, zoneSpecification: new ZoneSpecification(
+      print: (Zone self, ZoneDelegate parent, Zone zone, String line) {
+        expect(line, '🤣 test');
+      }
+    ));
   });
 }
