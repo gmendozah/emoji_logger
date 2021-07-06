@@ -1,15 +1,27 @@
-# flutter_logs
+# Emoji Logger
 
-A new Flutter project.
 
-## Getting Started
+Simple logger that adds an emoji to a message.
+log print with ease.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+### Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Print debug logs with the 🤣 emoji
+```dart
+    EmojiLogger.d('Hello World');
+``` 
+will print
+```
+🤣 Hello World
+```
 
+### Contributing
+
+We accept the following contributions:
+
+* Improving documentation
+* Reporting issues
+* Fixing bugs
+
+
+We don't accept new functionality changes at the moment.
